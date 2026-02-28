@@ -128,10 +128,6 @@ Dự án tích hợp sẵn VNPay sandbox để test thanh toán. Cấu hình đ�
 - ✅ Quản lý đơn hàng đầy đủ
 - ✅ Phân loại sản phẩm theo danh mục
 
-## Đóng góp
-
-Mọi đóng góp đều được hoan nghênh! Vui lòng tạo Pull Request hoặc Issue nếu bạn muốn đóng góp cho dự án.
-
 ## Tác giả
 
 - **giapthinh123** - [GitHub Profile](https://github.com/giapthinh123)
