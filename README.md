@@ -86,8 +86,8 @@ String password = "your_password";
 
 1. Clone repository:
 ```bash
-git clone https://github.com/giapthinh123/BTL_demo_4.git
-cd BTL_demo_4
+git clone https://github.com/giapthinh123/mvc-fashion-shop.git
+cd mvc-fashion-shop
 ```
 
 2. Build project với Maven:
