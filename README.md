@@ -1,15 +1,15 @@
 # BTL_demo_4 - Fashion Shop
 
-Website bán hàng thời trang được xây dựng bằng Java Servlet và JSP.
+A fashion e-commerce website built with Java Servlet and JSP.
 
-## Mô tả dự án
+## Project Description
 
-BTL_demo_4 là một ứng dụng web thương mại điện tử chuyên bán các sản phẩm thời trang bao gồm:
-- Thời trang nam
-- Thời trang nữ  
-- Thời trang trẻ em
+BTL_demo_4 is an e-commerce web application specializing in fashion products including:
+- Men's fashion
+- Women's fashion
+- Children's fashion
 
-## Công nghệ sử dụng
+## Technologies Used
 
 - **Backend**: Java Servlet, JSP
 - **Frontend**: HTML, CSS, JavaScript, Bootstrap 5
@@ -18,14 +18,14 @@ BTL_demo_4 là một ứng dụng web thương mại điện tử chuyên bán c
 - **Build Tool**: Maven
 - **Java Version**: 24
 
-## Cấu trúc dự án
+## Project Structure
 
 ```
 mvc-fashion-shop/
 ├── src/
 │   └── main/
 │       ├── java/com/bqa/
-│       │   ├── config/         # Cấu hình (VNPay)
+│       │   ├── config/         # Configuration (VNPay)
 │       │   ├── dao/            # Data Access Objects
 │       │   ├── model/          # Entity classes
 │       │   ├── service/        # Business logic
@@ -42,95 +42,95 @@ mvc-fashion-shop/
 └── README.md
 ```
 
-## Chức năng chính
+## Main Features
 
-### Người dùng (User)
-- Đăng ký / Đăng nhập
-- Xem danh sách sản phẩm
-- Xem chi tiết sản phẩm
-- Thêm sản phẩm vào giỏ hàng
-- Thanh toán (COD hoặc VNPay)
-- Xem lịch sử đơn hàng
-- Quản lý thông tin cá nhân
+### User
+- Register / Login
+- View product list
+- View product details
+- Add products to cart
+- Checkout (COD or VNPay)
+- View order history
+- Manage personal information
 
-### Quản trị viên (Admin)
-- Quản lý sản phẩm (CRUD)
-- Quản lý danh mục sản phẩm
-- Quản lý người dùng
-- Quản lý đơn hàng
-- Xem báo cáo thống kê
+### Administrator (Admin)
+- Product management (CRUD)
+- Product category management
+- User management
+- Order management
+- View statistical reports
 
-## Cài đặt và chạy
+## Installation and Running
 
-### Yêu cầu
-- JDK 24 hoặc cao hơn
-- MySQL 8.0 hoặc cao hơn
-- Apache Maven 3.6 hoặc cao hơn
-- Apache Tomcat 10 (hoặc server hỗ trợ Jakarta EE 9+)
+### Requirements
+- JDK 24 or higher
+- MySQL 8.0 or higher
+- Apache Maven 3.6 or higher
+- Apache Tomcat 10 (or server supporting Jakarta EE 9+)
 
-### Cấu hình Database
+### Database Configuration
 
-1. Tạo database MySQL với tên `btl`:
+1. Create a MySQL database named `btl`:
 ```sql
 CREATE DATABASE btl CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ```
 
-2. Cập nhật thông tin kết nối database trong file `src/main/java/com/bqa/util/DBconn.java`:
+2. Update the database connection information in `src/main/java/com/bqa/util/DBconn.java`:
 ```java
 String url = "jdbc:mysql://localhost:3306/btl";
 String user = "root";
 String password = "your_password";
 ```
 
-### Build và Deploy
+### Build and Deploy
 
-1. Clone repository:
+1. Clone the repository:
 ```bash
 git clone https://github.com/giapthinh123/mvc-fashion-shop.git
 cd mvc-fashion-shop
 ```
 
-2. Build project với Maven:
+2. Build the project with Maven:
 ```bash
 mvn clean package
 ```
 
-3. Deploy file WAR lên Tomcat server hoặc chạy trực tiếp từ IDE
+3. Deploy the WAR file to Tomcat server or run directly from IDE
 
-### Chạy với IDE
+### Running with IDE
 
-- **IntelliJ IDEA**: Import project as Maven project, cấu hình Tomcat server và run
+- **IntelliJ IDEA**: Import project as Maven project, configure Tomcat server and run
 - **Eclipse**: Import as Maven project, add to Tomcat server
 
 ## Dependencies
 
-| Dependency | Version | Mô tả |
-|------------|---------|-------|
+| Dependency | Version | Description |
+|------------|---------|-------------|
 | Jakarta Servlet API | 6.1.0 | Servlet specification |
 | Jakarta JSTL | 3.0.0 | JSP Standard Tag Library |
-| MySQL Connector | 8.0.33 | JDBC driver cho MySQL |
+| MySQL Connector | 8.0.33 | JDBC driver for MySQL |
 | JUnit Jupiter | 5.11.0 | Testing framework |
 
-## Cổng thanh toán VNPay
+## VNPay Payment Gateway
 
-Dự án tích hợp sẵn VNPay sandbox để test thanh toán. Cấu hình được lưu trong `VNPayConfig.java`:
-- URL thanh toán: sandbox.vnpayment.vn
+The project integrates VNPay sandbox for payment testing. Configuration is stored in `VNPayConfig.java`:
+- Payment URL: sandbox.vnpayment.vn
 
-> **Lưu ý**: Đây là môi trường sandbox, không sử dụng cho production.
+> **Note**: This is a sandbox environment, not for production use.
 
-## Tính năng nổi bật
+## Key Features
 
-- ✅ Giao diện responsive với Bootstrap 5
-- ✅ Phân quyền User/Admin
-- ✅ Tích hợp thanh toán VNPay
-- ✅ Quản lý giỏ hàng
-- ✅ Quản lý đơn hàng đầy đủ
-- ✅ Phân loại sản phẩm theo danh mục
+- ✅ Responsive interface with Bootstrap 5
+- ✅ User/Admin role authorization
+- ✅ VNPay payment integration
+- ✅ Shopping cart management
+- ✅ Complete order management
+- ✅ Product categorization by category
 
-## Tác giả
+## Author
 
 - **giapthinh123** - [GitHub Profile](https://github.com/giapthinh123)
 
 ## License
 
-Dự án này được phát triển cho mục đích học tập.
+This project was developed for educational purposes.
