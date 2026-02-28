@@ -115,7 +115,6 @@ mvn clean package
 
 Dự án tích hợp sẵn VNPay sandbox để test thanh toán. Cấu hình được lưu trong `VNPayConfig.java`:
 - URL thanh toán: sandbox.vnpayment.vn
-- Return URL: localhost:8080/BTL_demo_4_war_exploded/checkout/vnpay_return
 
 > **Lưu ý**: Đây là môi trường sandbox, không sử dụng cho production.
 
