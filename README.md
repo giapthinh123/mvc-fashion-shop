@@ -21,7 +21,7 @@ BTL_demo_4 là một ứng dụng web thương mại điện tử chuyên bán c
 ## Cấu trúc dự án
 
 ```
-BTL_demo_4/
+mvc-fashion-shop/
 ├── src/
 │   └── main/
 │       ├── java/com/bqa/
